@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+ <head> 
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+ 
+  <title>Aplicacion 07</title>
+
+  <!--grupo CSS-->
+  <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css" />
+  <link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css" />
+  <link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css" /> 
+  <link rel="stylesheet" href="css/extra.css"/>      
+        
+
+
+  <!--grupo JavaScript-->
+  <script src="js/jquery-1.11.2.min.js"></script>
+  <script src="js/jquery.mobile-1.4.5.min.js"></script>
+  <script src="js/acciones.js" type="text/javascript"></script>
+  <script src="phonegap.js" type="text/javascript"></script>
+  
+ </head>
+
+ <body>
+ 
+ <!-- Principal -->
+ <div data-role="page" id="principal" >   
+  S<div data-role="header">
+    <h1>Aplicacion 07</h1>
+  </div>
+
+  <div data-role="main" class="ui-content">
+      <br>
+      <div id="jugador">
+      </div>
+      <a href="#tablero" id="btnjugar"  data-transition="pop" class="ui-btn ui-icon-heart ui-btn-icon-right ui-shadow ui-corner-all ui-btn-inline " >Jugar</a>
+      <a href="#conf" id="btnconf"  data-transition="pop" class="ui-btn ui-icon-gear ui-btn-icon-right ui-shadow ui-corner-all ui-btn-inline " >Configuracion</a>
+  </div>
+
+  <div data-role="footer">
+    <h1>@aaron</h1>
+    <p>colores</p>
+  </div>
+ </div>  
+ <!-- Principal -->
+  
+ <!-- Tablero -->
+ <div data-role="page" id="tablero" >   
+
+  <div data-role="main" class="ui-content">
+          <div id="B1"  style="background-color:#F00; background-color:#00F;" class="cuadro"> &nbsp;</div>	
+          <div  id="B2" style="background-color:#F00; background-color:#F00;" class="cuadro"> &nbsp;</div>	
+          <div  id="B3" style="background-color:#F00; background-color:#0F0; "class="cuadro"> &nbsp;</div>
+          <div  id="B4" style="background-color:#F00; background-color:#FF0;"  class="cuadro"> &nbsp;</div>	
+   </div>   
+   <div data-role="footer">
+     <a href="#principal" id="config"  data-transition="pop" class="ui-btn ui-icon-home ui-btn-icon-right ui-shadow ui-corner-all ui-btn-inline " >Inicio</a>
+    <h1>&nbsp;</h1>
+  </div>
+  <div data-role="footer" data-position="fixed" >
+    <h3><div id="pantalla" > Pulso:  </div></h3>
+   </div>
+ </div>
+ <a href="coloreBD.sqlite">coloreBD</a><!-- Tablero -->    
+ 
+ 
+       <!-- Configuracion -->
+ <div data-role="page" id="conf" ><div data-role="header">
+    <h1>Aplicacion 07</h1>
+  </div>
+
+  <div data-role="main" class="ui-content">
+      <br>
+      <div id="jugador">
+      </div>
+       <input type="text" name="nombre" placeholder="Nombre"   id="txtnombre" >
+      <a  id="btnguardar"  data-transition="pop" class="ui-btn ui-icon-heart ui-btn-icon-right ui-shadow ui-corner-all ui-btn-inline " >Guardar</a>
+  </div>
+
+  <div data-role="footer">
+     <a href="#principal" id="config"  data-transition="pop" class="ui-btn ui-icon-home ui-btn-icon-right ui-shadow ui-corner-all ui-btn-inline " >Inicio</a>
+    <h1>&nbsp;</h1>
+  </div>
+ </div>  
+ <!-- Configuracion -->                                              
+
+</body>
+</html> 
